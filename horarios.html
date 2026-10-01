@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários - LZN Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>LZN Barber Shop</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="horarios.html">Horários</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+<main>
+    <h2>Escolha seu horário</h2>
+    <form>
+        <label for="data">Escolha a data:</label>
+        <input type="date" id="data" name="data" required>
+        <h3>Horários disponíveis</h3>
+        <div class="horarios">
+
+            <label>
+                <input type="radio" name="horario" value="09:00" required>
+                09:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="10:00">
+                10:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="11:00">
+                11:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="13:00">
+                13:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="14:00">
+                14:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="15:00">
+                15:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="16:00">
+                16:00
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="17:00">
+                17:00
+            </label>
+        </div>
+        <button type="submit">
+            Confirmar horário
+        </button>
+    </form>
+</main>
+<footer>
+<p> © 2026 LZN Barber Shop</p>
+</footer>
+</body>
+</html>
