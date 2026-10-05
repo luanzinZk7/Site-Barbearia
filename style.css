@@ -3,182 +3,269 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #111;
     color: #fff;
     min-height: 100vh;
 }
+
 header {
     background-color: #1c1c1c;
-    padding: 25px;
+    padding: 1.5rem;
     text-align: center;
     border-bottom: 2px solid #c99b3b;
 }
+
 header h1 {
     color: #c99b3b;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
 }
+
 nav {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
 }
+
 nav a:hover {
     color: #c99b3b;
 }
+
 main {
+    width: 90%;
     max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 2rem auto;
+    padding: 1.5rem;
     background-color: #1c1c1c;
-    border-radius: 10px;
+    border-radius: 8px;
 }
+
 main h2 {
     color: #c99b3b;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
+
 .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 80px 30px;
+    padding: 3rem 1rem;
 }
+
 .inicio h2 {
-    font-size: 35px;
+    font-size: 2rem;
 }
+
 .inicio p {
-    margin: 15px;
+    margin: 1rem 0;
     line-height: 1.6;
 }
+
 .botao {
     display: inline-block;
-    margin-top: 25px;
-    padding: 15px 30px;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
     background-color: #c99b3b;
     color: #111;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 input {
-    padding: 12px;
+    padding: 0.8rem;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
+    width: 100%;
 }
+
 button {
-    margin-top: 20px;
-    padding: 14px;
+    margin-top: 1.2rem;
+    padding: 0.9rem;
     background-color: #c99b3b;
     color: #111;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    width: 100%;
 }
+
 button:hover,
 .botao:hover {
     background-color: #e0b957;
 }
+
+/* Flexbox nos horarios */
 .horarios {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
+
 .horarios label {
+    flex: 1 1 20%;
     background-color: #292929;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .horarios input {
     margin-right: 5px;
 }
+
+/* Flexbox nos servicos */
 .servicos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
 .card {
+    flex: 1 1 45%;
     background-color: #292929;
-    padding: 25px;
+    padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
 }
+
 .card h3 {
     color: #c99b3b;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
 }
+
 .card p {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
+
 .card strong {
     color: #c99b3b;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
+
 main p {
     line-height: 1.7;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
+
 footer {
     text-align: center;
-    padding: 25px;
-    margin-top: 300px;
+    padding: 1.5rem;
+    margin-top: 5vh;
     background-color: #1c1c1c;
     color: #aaa;
 }
-.logo3 {
-    text-align: center;
-}
-.hero3 {
+
+.logo3, .hero3 {
     text-align: center;
     background-color: #111;
     color: #c99b3b;
 }
+
 .banner4 {
     text-align: center;
-    background-color:black;
+    background-color: black;
     color: white;
-    padding: 10px;
-    padding: 5px;
+    padding: 1rem;
 }
+
 .banner4 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 1.8rem;
 }
+
 .banner4 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
+
 .banner4 img {
-    width: 10.00%;
-    height: 5px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
+
 .Centro {
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
+
 .Centro h2 {
     color: goldenrod;
-    padding: 10px;
-    margin: 30px;
+    padding: 0.5rem;
+    margin: 1.5rem 0;
 }
+
 .Centro p {
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.6;
+}
+
+/* Media Queries para celular e tablet */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .horarios label {
+        flex: 1 1 45%;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .horarios label {
+        flex: 1 1 100%;
+    }
+
+    .inicio h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
 }
