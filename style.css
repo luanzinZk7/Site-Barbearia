@@ -3,263 +3,182 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #111;
     color: #fff;
     min-height: 100vh;
 }
-
 header {
     background-color: #1c1c1c;
-    padding: 1.5rem;
+    padding: 25px;
     text-align: center;
     border-bottom: 2px solid #c99b3b;
 }
-
 header h1 {
     color: #c99b3b;
-    margin-bottom: 1rem;
-    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
-
 nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+    gap: 25px;
     flex-wrap: wrap;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
 }
-
 nav a:hover {
     color: #c99b3b;
 }
-
 main {
-    width: 90%;
     max-width: 900px;
-    margin: 2rem auto;
-    padding: 1.5rem;
+    margin: 50px auto;
+    padding: 300px;
     background-color: #1c1c1c;
-    border-radius: 8px;
+    border-radius: 10px;
 }
-
 main h2 {
     color: #c99b3b;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 25px;
 }
-
 .inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 80px 30px;
 }
-
 .inicio h2 {
-    font-size: 2rem;
+    font-size: 35px;
 }
-
 .inicio p {
-    margin: 1rem 0;
+    margin: 15px;
     line-height: 1.6;
 }
-
 .botao {
     display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.8rem 1.5rem;
+    margin-top: 25px;
+    padding: 15px 30px;
     background-color: #c99b3b;
     color: #111;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
-
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 input {
-    padding: 0.8rem;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
+    font-size: 16px;
 }
-
 button {
-    margin-top: 1.2rem;
-    padding: 0.9rem;
+    margin-top: 20px;
+    padding: 14px;
     background-color: #c99b3b;
     color: #111;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    width: 100%;
 }
-
 button:hover,
 .botao:hover {
     background-color: #e0b957;
 }
 .horarios {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    margin-top: 1.2rem;
+    margin-top: 20px;
 }
-
 .horarios label {
-    flex: 1 1 20%;
     background-color: #292929;
-    padding: 1rem;
+    padding: 15px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .horarios input {
     margin-right: 5px;
 }
-
 .servicos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
 .card {
-    flex: 1 1 45%;
     background-color: #292929;
-    padding: 1.5rem;
+    padding: 25px;
     border-radius: 8px;
     text-align: center;
 }
-
 .card h3 {
     color: #c99b3b;
-    margin-bottom: 0.8rem;
+    margin-bottom: 10px;
 }
-
 .card p {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
-
 .card strong {
     color: #c99b3b;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
-
 main p {
     line-height: 1.7;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
-
 footer {
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 5vh;
+    padding: 25px;
+    margin-top: 300px;
     background-color: #1c1c1c;
     color: #aaa;
 }
-
-.logo3, .hero3 {
+.logo3 {
+    text-align: center;
+}
+.hero3 {
     text-align: center;
     background-color: #111;
     color: #c99b3b;
 }
-
 .banner4 {
     text-align: center;
-    background-color: black;
+    background-color:black;
     color: white;
-    padding: 1rem;
+    padding: 10px;
+    padding: 5px;
 }
-
 .banner4 h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 32px;
 }
-
 .banner4 p {
-    font-size: 1rem;
+    font-size: 16px;
 }
-
 .banner4 img {
-    max-width: 100%;
-    height: auto;
+    width: 10.00%;
+    height: 5px;
     object-fit: cover;
 }
-
 .Centro {
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
-
 .Centro h2 {
     color: goldenrod;
-    padding: 0.5rem;
-    margin: 1.5rem 0;
+    padding: 10px;
+    margin: 30px;
 }
-
 .Centro p {
-    font-size: 1rem;
+    font-size: 17px;
     line-height: 1.6;
-}
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .card {
-        flex: 1 1 100%;
-    }
-
-    .horarios label {
-        flex: 1 1 45%;
-    }
-
-    main {
-        margin: 1rem auto;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.4rem;
-    }
-
-    .horarios label {
-        flex: 1 1 100%;
-    }
-
-    .inicio h2 {
-        font-size: 1.4rem;
-    }
-
-    footer {
-        margin-top: 2rem;
-    }
 }
